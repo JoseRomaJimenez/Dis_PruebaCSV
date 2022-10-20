@@ -8,6 +8,6 @@ package com.pruebaCSV;
 public class PruebaCSV {
     public static void main(String[] args) {
         LectorCSV miLector = new LectorCSV();
-        miLector.leerCSV("./datos/pokemon.csv");
+        miLector.leerCSV("./src/main/resources/datos/pokemon.csv");
     }
 }
