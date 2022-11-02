@@ -1,10 +1,12 @@
 package com.pruebaCSV;
 
 import com.opencsv.CSVReader;
-
 import java.io.FileReader;
+import java.util.ArrayList;
 
-public class ListaPokemon {
+public class ListaPokemon extends ArrayList<Pokemon> {
+
+
     // Sirve para almacenar los datos de los pokemons
     public ListaPokemon(String nombreArchivo){
 
@@ -15,7 +17,7 @@ public class ListaPokemon {
 
             //Sirve para leer cada linea del archivo
             while ((fila = csvReader.readNext()) != null){
-                Pokemon miPokemon = new Pokemon();
+                Pokemon miPokemon = new Pokemon(fila);
                 this.add(miPokemon);
             }
 

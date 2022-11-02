@@ -7,6 +7,22 @@ public class Pokemon {
     private int total, hp, attack, defense, speedAttack, speedDefense, speed, generation;
     private boolean legendary;
 
+    public Pokemon (String[] fila){
+        this.setNumero(Integer.parseInt(fila[0]));
+        this.setName(fila[1]);
+        this.setTipo1(fila[2]);
+        this.setTipo2(fila[3]);
+        this.setTotal(Integer.parseInt(fila[4]));
+        this.setHp(Integer.parseInt(fila[5]));
+        this.setAttack(Integer.parseInt(fila[6]));
+        this.setDefense(Integer.parseInt(fila[7]));
+        this.setSpeedAttack(Integer.parseInt(fila[8]));
+        this.setSpeedDefense(Integer.parseInt(fila[9]));
+        this.setSpeed(Integer.parseInt(fila[10]));
+        this.setGeneration(Integer.parseInt(fila[11]));
+        this.setLegendary(Boolean.parseBoolean(fila[12]));
+    }
+
     public int getNumero() {
         return numero;
     }
